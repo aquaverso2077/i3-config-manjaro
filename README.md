@@ -6,6 +6,6 @@
 | :--: | :--: | :--: | :--: |
 | | + | + | + |
 
-| i3-config |
-| :--: |
+| i3 |
+| --: |
 | ![image](https://github.com/aquaverso2077/i3-config-manjaro/assets/149948716/dd755955-9d2c-44a3-afb8-7dacb9f77ee6) |
