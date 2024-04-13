@@ -2,7 +2,7 @@
 >**How install:**
 `sudo pacman -S ttf-jetbrains-mono-nerd`
 ### St-terminal
-| PATCH: | vercenter | adapta | scroll |
+| PATCH: | vertcenter | adapta | scroll |
 | :--: | :--: | :--: | :--: |
 | | + | + | + |
 
