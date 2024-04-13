@@ -1,6 +1,10 @@
 ### Font
 >**How install:**
 `sudo pacman -S ttf-jetbrains-mono-nerd`
+### St-terminal
+| PATCH: | vercenter | adapta | scroll |
+| :--: | :--: | :--: | :--: |
+| | + | + | + |
 
 | i3-config |
 | :--: |
