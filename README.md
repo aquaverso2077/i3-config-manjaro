@@ -1,10 +1,18 @@
 ### Font
 >**How install:**
 `sudo pacman -S ttf-jetbrains-mono-nerd`
+---
 ### St-terminal
 | PATCH: | vertcenter | adapta | scroll |
 | :--: | :--: | :--: | :--: |
 | | + | + | + |
+---
+### Pipewire
+>**How install:**
+`sudo pacman -S pipewire pipewire-alsa pipewire-pulse wireplumber`
+>>**How enable:**
+`sudo systemctl --user enable --now pipewire.socket pipewire-pulse.socket wireplumber.service`
+---
 
 | i3 |
 | --: |
