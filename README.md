@@ -1,6 +1,8 @@
 ### Font
 >**How install:**
 `sudo pacman -S ttf-jetbrains-mono-nerd`
+>>**$ws font:**
+`yay -S ttf-kochi-substitute`
 ---
 ### St-terminal
 | PATCH: | vertcenter | adapta | scroll |
