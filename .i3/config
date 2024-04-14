@@ -175,11 +175,13 @@ assign [class="Chromium"] $ws2
 assign [class="TelegramDesktop"] $ws4
 assign [class="VSCodium"] $ws5
 assign [class="transmission-gtk"] $ws3
+assign [class="photoshop.exe"] $ws5
 
 # Open specific applications in floating mode
 # sound
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="Pavucontrol"] floating enable
+for_window [class="Viewnior"] floating enable
 
 for_window [class="calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
