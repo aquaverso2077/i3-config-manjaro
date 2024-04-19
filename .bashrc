@@ -2,6 +2,11 @@
 export PATH=~/.local/bin:$PATH
 export PATH=~/.cargo/bin:$PATH
 
+## MP3
+function yta() {
+    mpv --ytdl-format=bestaudio ytdl://ytsearch:"$*"
+}
+
 [[ $- != *i* ]] && return
 
 colors() {
