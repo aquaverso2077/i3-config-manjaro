@@ -6,8 +6,9 @@
 ---
 ### St-terminal
 | PATCH: | vertcenter | adapta | scroll |
-| :--: | :--: | :--: | :--: |
+| --: | :--: | :--: | :--: |
 | | + | + | + |
+| ![image](https://github.com/aquaverso2077/i3-config-manjaro/assets/149948716/52369641-e362-4811-989c-2d2ec6984afc) |
 ---
 ### Pipewire
 >**How install:**
