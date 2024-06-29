@@ -2,7 +2,7 @@
 include autostart.conf
 include window_rules.conf
 include ws_bind.conf
-include bar.conf
+include bar-light.conf
 include gaps.conf
 
 set $mod Mod4
@@ -25,7 +25,7 @@ bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font xft:JetBrainsMono NF 11
+font xft:JetBrainsMono NF 14
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -46,11 +46,18 @@ bindsym $mod+z exec --no-startup-id morc_menu
 bindsym $mod+Ctrl+m exec $TERMINAL -e 'alsamixer'
 #bindsym $mod+Ctrl+m exec pavucontrol
 
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume @DEFAULT_SINK@ +10%; notify-send 'volume +10'"
+bindsym XF86AudioLowerVolume exec "pactl set-sink-volume @DEFAULT_SINK@ -10%; notify-send 'volume -10'"
+bindsym XF86AudioMuteVolume exec "pactl set-sink-mute @DEFAULT_SINK@ toggle; notify-send 'mute/unmute'"
+
+## TOUCHPAD
+bindsym XF86TouchpadOn exec "xinput set-prop 14 167 1; notify-send 'Touchpad [ON]'"
+bindsym XF86TouchpadOff exec "xinput set-prop 14 167 0; notify-send 'Touchpad [OFF]'"
 ################################################################################################
 
 # Screen brightness controls
-# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+bindsym XF86MonBrightnessUp exec "brightnessctl set 100%; notify-send 'Brightness [HIGH]'"
+bindsym XF86MonBrightnessDown exec "brightnessctl set 50%; notify-send 'Brightness [LOW]'"
 
 # Start Applications
 bindsym $mod+Ctrl+b exec $TERMINAL -e 'bmenu'
@@ -65,7 +72,7 @@ bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
-
+bindsym $mod+F11 exec /home/av/.local/bin/wallpaper.sh
 # focus_follows_mouse no
 
 # change focus
