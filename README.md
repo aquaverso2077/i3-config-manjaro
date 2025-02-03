@@ -24,3 +24,4 @@ https://t.me/addtheme/KjdmLxzmc0JN3kQI
 | i3 + bar-light.conf|
 | --: |
 | ![image](https://github.com/aquaverso2077/i3-config-manjaro/assets/149948716/169e7fc5-b47b-43d1-8c15-4d190a6f0a38) |
+|![Manjaro](https://img.shields.io/badge/Manjaro-35BF5C?style=for-the-badge&logo=Manjaro&logoColor=white)|
